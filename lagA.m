@@ -1,4 +1,4 @@
-%Oppgave 2%
+% Oppgave 2 %
 function A = lagA(n)
     e = ones(n);
     A = spdiags([e, -4*e, 6*e, -4*e, e], [-2, -1, 0, 1, 2], n, n);
