@@ -1,6 +1,6 @@
 % Oppgave 2
 function A = lagA(n)
-    e = ones(n);
+    e = ones(n,1);
     A = spdiags([e, -4*e, 6*e, -4*e, e], [-2, -1, 0, 1, 2], n, n);
     
     A(1, 1:4) = [16, -9, 8/3, -1/4];
