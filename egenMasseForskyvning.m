@@ -1,3 +1,4 @@
+% Oppgave 3
 function y = egenMasseForskyvning()
     n = 10;
     A = lagA(n);
