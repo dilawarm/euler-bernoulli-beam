@@ -1,3 +1,4 @@
+% Oppgave 5
 function t = tabell()
     format longG;
     n_s = 10*2.^(1:11);
@@ -12,7 +13,6 @@ function t = tabell()
     I = (w*d^3)/12;
 
     func = @(x) (-tetthet*w*d*g);
-
     y = @(x) (func(x)/(24*E*I))*(x^(2))*(x^2-4*L*x+6*L^2);
 
     feil = zeros(1, length(n_s));
