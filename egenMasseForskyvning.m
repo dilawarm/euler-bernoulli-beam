@@ -1,4 +1,4 @@
-function y = oppgave3()
+function y = egenMasseForskyvning()
     n = 10;
     A = lagA(n);
 
