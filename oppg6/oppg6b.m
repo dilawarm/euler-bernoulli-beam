@@ -1,5 +1,4 @@
 function t = tabell6()
-    format longG;
     n_s = 10*2.^(1:11);
 
     L = 2;
@@ -28,7 +27,7 @@ function t = tabell6()
         h = L/n;
         b = h^4 / (E*I) * arrayfun(func, h:h:L)';
         y = A\b;
-        feil(index) = y(end) - riktig;
+        feil(index) = abs(y(end) - riktig);
         kond(index) = condest(A);
         last(index) = y(end);
         index = index + 1;
@@ -39,7 +38,7 @@ function t = tabell6()
     zoom yon;
     plot(last);
     set(gca, "xTick", 1:11)
-    set(gca, "xTickLabel", n_s)
+    set(gca, "xTickxLabel", n_s)
     grid;
     hold on;
     plot(riktig.*ones(length(last), 1));
