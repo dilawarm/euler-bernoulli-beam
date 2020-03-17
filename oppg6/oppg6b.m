@@ -38,7 +38,7 @@ function t = tabell6()
     zoom yon;
     plot(last);
     set(gca, "xTick", 1:11)
-    set(gca, "xTickxLabel", n_s)
+    set(gca, "xTickLabel", n_s)
     grid;
     hold on;
     plot(riktig.*ones(length(last), 1));
